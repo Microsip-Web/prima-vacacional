@@ -99,6 +99,11 @@ body {
 		width: 100%;
 		/* padding: 2.5rem 2.5rem; */
 	}
+	.salario,
+	.años,
+	.calcular {
+		width: 95%;
+	}
 }
 
 /* MEDIA QUERY MOBILE */
@@ -106,5 +111,10 @@ body {
 @media (min-width: 320px) and (max-width: 767px) {
 	.box {
 		width: 100%;
+	}
+	.salario,
+	.años,
+	.calcular {
+		width: 95%;
 	}
 }
