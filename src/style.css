@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+	font-family: 'Sora', sans-serif;
+	line-height: 1.5;
+	/* font-weight: 400; */
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Sora', sans-serif;
+}
+
+.box {
+	border-radius: 0.9375rem;
+	border: 0.5px solid #b8b8b8;
+	background: #fff;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+	/* margin: 0.5rem 0.5rem; */
+	width: 30%;
+	padding: 2.5rem 2.5rem;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.salario,
+.años {
+	border-radius: 0.9375rem;
+	background: #f2f2f2;
+	border: none;
+	outline: none;
+	padding: 0.9375rem 1.25rem;
+	color: #000;
+	font-family: Sora;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 80%;
+	/* remove appearence of type number */
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+.calcular {
+	background: #ff8709;
+	border-radius: 0.9375rem;
+	border: none;
+	outline: none;
+	padding: 0.9375rem 1.25rem;
+	color: white;
+	font-family: Sora;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 80%;
+	cursor: pointer;
+}
+
+.resultado {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+
+.resultado-texto {
+	color: #000;
+	font-family: Sora;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.resultado-prima {
+	color: #ff8709;
+	font-family: Sora;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+/* MEDIA QUERY TABLE */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.box {
+		width: 80%;
+		/* padding: 2.5rem 2.5rem; */
+	}
+}
+
+/* MEDIA QUERY MOBILE */
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.box {
+		width: 80%;
+	}
+}
