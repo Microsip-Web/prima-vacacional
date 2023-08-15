@@ -50,29 +50,6 @@ body {
 	font-weight: 600;
 	line-height: normal;
 	width: 80%;
-	/* remove appearence of type number on all browsers an os */
-	-moz-appearance: textfield;
-	-webkit-appearance: textfield;
-	appearance: textfield;
-
-	/* remove spin button */
-	-moz-appearance: textfield;
-	-webkit-appearance: none;
-
-	/* Firefox */
-	-moz-appearance: textfield;
-
-	/* Chrome */
-	-webkit-appearance: none;
-
-	/* Safari and Chrome */
-	-webkit-appearance: none;
-
-	/* IE */
-	-ms-appearance: none;
-
-	/* Opera */
-	appearance: none;
 }
 
 .calcular {

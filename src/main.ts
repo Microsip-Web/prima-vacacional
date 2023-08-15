@@ -6,8 +6,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <div class="box">
       <div class="calculator">
-        <input type="number" class="salario" value="" placeholder="Salario diario ($MXN)" />
-        <input type="number" class="años" value="" placeholder="Años en la empresa" />
+        <input type="text" class="salario" value="" placeholder="Salario diario ($MXN)" />
+        <input type="text" class="años" value="" placeholder="Años en la empresa" />
         <button class="calcular">Calcular</button>
 
         <div class="resultado">
@@ -95,12 +95,8 @@ document.addEventListener('keydown', (e) => {
 		const dailySalary = Number(salario.value);
 		const yearsOfWork = Number(años.value);
 
-		// Validate input values, if not numbers, show error message, if is cero, show error message
-		if (isNaN(dailySalary) || isNaN(yearsOfWork)) {
-			resultadoTexto.textContent = 'Error';
-			resultadoPrima.textContent = 'Ingresa valores válidos';
-			return;
-		} else if (dailySalary === 0 || yearsOfWork === 0) {
+		// Validate input values
+		if (isNaN(dailySalary) || isNaN(yearsOfWork) || dailySalary < 0 || yearsOfWork < 0) {
 			resultadoTexto.textContent = 'Error';
 			resultadoPrima.textContent = 'Ingresa valores válidos';
 			return;
